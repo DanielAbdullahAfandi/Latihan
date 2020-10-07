@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author Administrator
+ */
+public class Kelulusan1 {
+    public static void main(String[] args) {
+          Scanner masukan = new Scanner (System.in);
+          double a;
+        
+     System.out.println("Masukkan nama anda = "); 
+     String Nama = masukan.next();
+    
+     System.out.println("Masukkan NIM       = ");
+     String nim = masukan.next();
+        //menerima input dari user
+        System.out.println("Masukkan nilai anda :");
+        a = masukan.nextDouble();
+       //pengecekan terhadap nilai
+         if (a<0||a>100)
+            System.out.println("Maaf nilai anda salah");
+
+         else if (a>60)
+            System.out.println("Selamat anda lulus");
+
+         else
+            System.out.println("Maaf anda tidak lulus");
+}}
